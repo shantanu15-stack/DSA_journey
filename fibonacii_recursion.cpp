@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 // print fibonacci series using recursion
-void fibonacci(int a, int b,int n){
+void printfibonacci(int a, int b,int n){
     if(n==0) return ;
     int c=a+b;
     cout<<c<<" ";
-    fibonacci(b,c,n-1);
+    printfibonacci(b,c,n-1);
 }
 
 int main(){
@@ -16,6 +16,7 @@ int main(){
         cout<<0<<" "<<1<<" "; 
     }
     
-    fibonacci(0,1,n-2);
+    printfibonacci(0,1,n-2);
     return 0;
 }
+
